@@ -10,8 +10,27 @@
   object-fit: cover;
   border-radius: 7px;
 }
-.single-pr-card .card-info {
+.single-pr-card .card-info h3 {
+  margin: 10px 0px;
 }
 .single-pr-card .card-info p {
   font-size: 18px;
 }
+.cart-btn {
+  padding: 10px 18px;
+  font-size: 16px;
+  color: #fff;
+  background: #1d1d1d;
+  border: 0px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.cart-btn svg {
+  transition: all 0.3s ease-in-out;
+}
+.cart-btn:hover svg {
+  margin-left: 10px;
+}
+/* .cart-btn svg {
+  margin-left: 10px;
+} */

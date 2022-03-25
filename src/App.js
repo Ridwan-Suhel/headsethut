@@ -16,11 +16,16 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <div className="container">
+      <div className="area-wrapper">
+        {/* product area  */}
         <div className="product-wrapper">
           {prDatas.map((prData) => (
             <Card key={prData.id} data={prData}></Card>
           ))}
+        </div>
+        {/* selected area  */}
+        <div className="selected-area">
+          <h3>Selected Items...</h3>
         </div>
       </div>
     </div>
