@@ -1,0 +1,22 @@
+.area-wrapper {
+  display: flex;
+  /* gap: 10px; */
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.product-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  padding: 0px 35px;
+}
+.selected-area {
+  background: #ecf0f1;
+  width: 100%;
+  border-radius: 7px;
+
+  position: sticky;
+  top: 0px;
+  padding: 15px 10px;
+  min-height: 300px;
+}

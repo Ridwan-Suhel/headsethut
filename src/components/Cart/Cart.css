@@ -1,0 +1,22 @@
+.selected-items {
+}
+.selected-items h3 {
+  color: #1d1d1d;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+.selected-items ul {
+}
+.selected-items ul li {
+  list-style-type: none;
+  font-size: 22px;
+
+  padding: 10px 15px;
+  background: #333;
+  color: #fff;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  border-radius: 7px;
+}
