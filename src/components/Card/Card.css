@@ -4,8 +4,6 @@
   margin: 0 auto;
   padding: 10px;
 }
-.single-pr-card .card-top {
-}
 .single-pr-card .card-top img {
   width: 240px;
   height: 265px;
@@ -15,6 +13,5 @@
 .single-pr-card .card-info {
 }
 .single-pr-card .card-info p {
-}
-.single-pr-card .card-info h3 {
+  font-size: 18px;
 }
