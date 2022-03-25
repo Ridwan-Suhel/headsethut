@@ -1,0 +1,15 @@
+header {
+  text-align: center;
+  padding: 30px 0px;
+}
+header h2 {
+  font-weight: 500;
+}
+header h2 a {
+  text-decoration: none;
+  color: #1d1d1d;
+  font-size: 35px;
+}
+header p {
+  font-size: 18px;
+}
