@@ -42,4 +42,10 @@
   .product-wrapper {
     grid-template-columns: repeat(1, 1fr);
   }
+  .selected-items ul li {
+    font-size: 18px;
+    padding: 10px 10px;
+    color: #fff;
+    width: 250px;
+  }
 }
