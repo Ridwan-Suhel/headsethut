@@ -42,3 +42,9 @@
 .btn-wrapper .reset-btn {
   background: #c0392b;
 }
+.randomOne {
+  margin-bottom: 15px;
+}
+.randomOne span {
+  font-weight: 500;
+}

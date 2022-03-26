@@ -14,13 +14,26 @@ const Cart = (props) => {
   //     result.innerText = users[index];
   // });
 
+  let randomName = [];
+
   const handleRandomBtn = () => {
+    const ul = document.querySelector("ul");
+    ul.innerHTML = "";
     let index = getRandomNumber(0, cart.length - 1);
-    // const li = document.querySelector("li");
-    // li.innerHTML = cart[index];
-    // let result = cart[index];
-    // const test = cart[index].name;
+
+    // const randomPr = cart[index].name;
+    const randomPr = cart[index];
+    randomName.push(randomPr.name);
     console.log(cart, cart[index].name, "clicked");
+    // console.log(randomName, "i am random");
+
+    // const p = document.createElement(p);
+    // ul.appendChild(p);
+    const oneRandom = randomName[0];
+    // console.log(oneRandom);
+    ul.innerHTML = `<p class="randomOne"><span>Your Random Product</span>: ${oneRandom}</p>`;
+    // const randomP = document.getElementsByClassName("randomOne");
+    // randomP.innerHTML = "";
   };
 
   return (
@@ -45,6 +58,7 @@ const Cart = (props) => {
 
         {/* https://love2dev.com/blog/javascript-remove-from-array/ */}
       </div>
+      <p>{randomName[0]}</p>
 
       {/* <div className="random-product">{}</div> */}
     </div>
