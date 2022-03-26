@@ -59,8 +59,6 @@ const Cart = (props) => {
         <button onClick={resetBtn} className="reset-btn">
           Reset
         </button>
-
-        {/* https://love2dev.com/blog/javascript-remove-from-array/ */}
       </div>
     </div>
   );
