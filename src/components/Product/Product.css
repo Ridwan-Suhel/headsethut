@@ -20,3 +20,26 @@
   padding: 15px 10px;
   min-height: 300px;
 }
+@media (max-width: 767px) {
+  .area-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .selected-area {
+    top: 0px;
+    left: 0px;
+    min-height: 100px;
+    margin-bottom: 15px;
+  }
+  .product-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 0px;
+  }
+}
+@media (max-width: 550px) {
+  .product-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

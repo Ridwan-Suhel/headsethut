@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Cart.css";
 const Cart = (props) => {
   let { cart } = props;
-
+  console.log(cart, "I am cart compo");
   function getRandomNumber(min, max) {
     let step1 = max - min + 1;
     let step2 = Math.random() * step1;
@@ -19,17 +19,22 @@ const Cart = (props) => {
     const randomPr = cart[index];
     randomName.push(randomPr.name);
     const oneRandom = randomName[0];
-    ul.innerHTML = `<p class="randomOne"><span>Your Random Product</span>: ${oneRandom}</p>`;
+    console.log(oneRandom);
+    ul.innerHTML = `<p class="randomOne"><span>We Chose for you:</span> ${oneRandom}</p>`;
+
+    console.log(index.length);
     console.log(cart);
-    cart = [];
-    // console.log(cart, cart[index].name, "clicked");
+    document.getElementById("chose-btn").disabled = true;
+    document.getElementById("chose-btn").style.backgroundColor = "#aad3bb";
   };
 
   const resetBtn = () => {
     const ul = document.querySelector("ul");
     ul.innerHTML = "";
     cart = [];
-    // console.log(cart);
+    document.getElementById("chose-btn").disabled = false;
+    document.getElementById("chose-btn").style.backgroundColor = "#27ae60";
+    console.log(cart);
   };
 
   return (
@@ -43,7 +48,12 @@ const Cart = (props) => {
         ))}
       </ul>
       <div className="btn-wrapper">
-        <button onClick={handleRandomBtn} className="chose-btn">
+        <button
+          onClick={handleRandomBtn}
+          className="chose-btn"
+          disabled={false}
+          id="chose-btn"
+        >
           Chose 1 for me
         </button>
         <button onClick={resetBtn} className="reset-btn">
